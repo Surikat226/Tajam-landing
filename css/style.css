@@ -826,3 +826,13 @@ body {
 .footrow__links a {
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .expertise__column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .expertise__column {
+    width: 100%;
+  }
+}
