@@ -92,7 +92,10 @@ body {
   margin: 0 auto;
 }
 
-.button {
+/*=============
+		ШАБЛОНЫ
+==============*/
+.form__submitmsg, .button {
   font-family: "Hammersmith One";
   font-size: 16px;
   color: #00e0d0;
@@ -103,7 +106,7 @@ body {
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
-.button:hover {
+.form__submitmsg:hover, .button:hover {
   background-color: #00e0d0;
   color: #413d4b;
 }
@@ -477,84 +480,26 @@ body {
 }
 
 .photos__body {
-  border: 1px solid red;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[6];
-  grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: (1fr)[2];
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.photos__body > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.photos__body > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-}
-
-.photos__body > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.photos__body > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-}
-
-.photos__body > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.photos__body > *:nth-child(6) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 6;
-}
-
-.photos__body > *:nth-child(7) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.photos__body > *:nth-child(8) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-}
-
-.photos__body > *:nth-child(9) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
-
-.photos__body > *:nth-child(10) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 4;
-}
-
-.photos__body > *:nth-child(11) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
-}
-
-.photos__body > *:nth-child(12) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 6;
-}
-.photos__item {
-  border: 1px solid green;
+  grid-template-columns: repeat(auto-fit, minmax(267px, 1fr));
+  grid-auto-rows: 200px;
 }
 .photos__item img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media screen and (min-width: 1366px) {
+  .photos__item {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+  }
+}
 /*============
 		QUOTES
 =============*/
@@ -617,20 +562,9 @@ body {
   margin: 0 0 25px 0;
 }
 .form__submitmsg {
-  font-family: "Hammersmith One";
-  font-size: 16px;
-  color: #00e0d0;
   background-color: transparent;
-  padding: 10px 30px;
-  border: 1px solid #00e0d0;
-  border-radius: 3px;
   display: block;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
-}
-.form__submitmsg:hover {
-  background-color: #00e0d0;
-  color: #413d4b;
+  padding: 10px 30px;
 }
 
 .client__logobox {
