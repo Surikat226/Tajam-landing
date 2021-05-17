@@ -1053,6 +1053,9 @@ body {
   }
 }
 @media screen and (max-width: 576px) {
+  .footbox__logo_adptv {
+    margin: 0 0 10px 0;
+  }
   .footbox__column {
     margin: 0 0 50px 0;
     display: -webkit-box;
