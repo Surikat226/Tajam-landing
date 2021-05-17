@@ -280,17 +280,15 @@ body {
 		OUR STORY - VIDEO
 ========================*/
 .story-vid {
-  min-height: 550px;
   background-color: #2e264b;
   background: url("../video/Preview_final.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
 .story-vid__video video {
-  border: 1px solid grey;
-  display: block;
-  height: 550px;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 .play {
   display: none;
@@ -498,14 +496,6 @@ body {
      object-fit: cover;
 }
 
-@media screen and (min-width: 1366px) {
-  .photos__item {
-    -ms-grid-column-span: 2;
-    grid-column: span 2;
-    -ms-grid-row-span: 2;
-    grid-row: span 2;
-  }
-}
 /*============
 		QUOTES
 =============*/
@@ -529,6 +519,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 25px;
+  text-align: center;
 }
 .FUTURE-SLIDER p {
   background-color: #247;
@@ -896,6 +887,14 @@ body {
   }
   .works__title {
     margin: 0 0 20px 0;
+  }
+}
+@media screen and (min-width: 1366px), screen and (max-width: 576px) {
+  .photos__item {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
   }
 }
 @media screen and (max-width: 992px) {

@@ -77,6 +77,14 @@
 		}
 	}
 }
+@media screen and (min-width: 1366px), screen and (max-width: 576px) {
+	.photos {
+		&__item {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+	}
+}
 ////////////////////////////
 
 
@@ -153,12 +161,8 @@
 // FOOTER (MEDIA)
 @media screen and (max-width: 992px) {
 	.footer {
-		&__main-box {
-		}
 	}
 	.footbox {
-		&__headers {
-		}
 		&__logo {
 			display: none;
 			&_adptv {
@@ -195,26 +199,6 @@
 			&_wrap {
 			}
 		}
-		&__text {
-		}
-		&__socials-row {
-		}
-		&__socials-item {
-			&:last-child {
-			}
-		}
-		&__socials-icon {
-			a {
-			}
-			&:hover {
-			}
-		}
-	}
-	.subscribe {
-	}
-	.subfield {
-	}
-	.subbutton {
 	}
 	
 	.footrow {

@@ -248,17 +248,15 @@ body {
 ========================*/
 
 .story-vid {
-	min-height: 550px;
 	background-color: #2e264b;
 	background: url('../video/Preview_final.jpg') center no-repeat;
 	background-size: cover;
 	position: relative;
 	&__video {
 		video {
-			border: 1px solid grey;
-			display: block;
-			height: 550px;
-			margin: 0 auto;
+			width: 100%;
+			height: auto;
+			max-height: 100%;
 		}
 	}
 
@@ -390,7 +388,6 @@ body {
 .teammates {
 
 	&__row {
-		//border: 3px solid red;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -496,15 +493,6 @@ body {
 	}
 }
 
-@media screen and (min-width: 1366px) {
-	.photos {
-		&__item {
-			grid-column: span 2;
-			grid-row: span 2;
-		}
-	}
-}
-
 
 
 /*============
@@ -525,6 +513,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-size: 25px;
+	text-align: center;
 	p {
 		background-color: #247;
 		padding: 30px;
