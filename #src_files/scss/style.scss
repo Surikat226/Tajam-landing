@@ -632,6 +632,9 @@ body {
 
 	&__logo {
 		width: 33.333%;
+		&_adptv {
+			display: none;
+		}
 	}
 
 	&__title {
@@ -641,6 +644,9 @@ body {
 		line-height: 26px;
 		font-weight: 900;
 		letter-spacing: 0.05em;
+		&_adptv {
+			display: none;
+		}
 	}
 
 	&__main {
@@ -701,11 +707,11 @@ body {
 
 .subscribe {
 	display: flex;
-	justify-content: space-between;
 	margin: 0 0 25px 0;
 }
 .subfield {
 	padding: 10px;
+	margin: 0 10px 0 0;
 	background-color: transparent;
 	color: #fff;
 	width: 210px;
