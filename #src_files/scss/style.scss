@@ -56,8 +56,8 @@ body {
 	}
 }
 
-////////////////////////////////////////////
-// Общие шаблоны для заголовков и текстов //
+/*///////////////////////////////////////////
+// Общие шаблоны для заголовков и текстов /*/
 .title {
 	font-family: 'Playfair Display';
 	font-size: 16px;
@@ -82,8 +82,8 @@ body {
 	letter-spacing: 0.03em;
 	color: #413d4b;
 }
-// Общие шаблоны для заголовков и текстов //
-////////////////////////////////////////////
+/*/ Общие шаблоны для заголовков и текстов //
+///////////////////////////////////////////*/
 
 .txtblock {
 	text-align: center;
@@ -394,11 +394,13 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		margin: 0 0 -20px 0;
 	}
 
 	&__column {
 		width: 220px;
 		border: 1px solid #78738e;
+		margin: 0 0 20px 0;
 	}
 
 	&__item {
@@ -538,7 +540,6 @@ body {
 .news-client {
 	padding: 70px 0;
 	&__box {
-		//border: 1px solid red;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -589,6 +590,7 @@ body {
 
 	&__logobox {
 		padding: 20px 0 0 0;
+		/* Думаю, проще было бы сделать флексами, но я эксперементировал */
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, 1fr);
@@ -758,6 +760,7 @@ body {
 
 
 
-//////////////////
-// Медиазапросы //
+/*======================
+			МЕДИАЗАПРОСЫ
+======================*/
 @import "media";

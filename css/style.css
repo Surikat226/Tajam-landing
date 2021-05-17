@@ -111,6 +111,8 @@ body {
   color: #413d4b;
 }
 
+/*///////////////////////////////////////////
+// Общие шаблоны для заголовков и текстов /*/
 .title {
   font-family: "Playfair Display";
   font-size: 16px;
@@ -136,6 +138,8 @@ body {
   color: #413d4b;
 }
 
+/*/ Общие шаблоны для заголовков и текстов //
+///////////////////////////////////////////*/
 .txtblock {
   text-align: center;
 }
@@ -399,10 +403,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 0 -20px 0;
 }
 .teammates__column {
   width: 220px;
   border: 1px solid #78738e;
+  margin: 0 0 20px 0;
 }
 .teammates__photo {
   height: 230px;
@@ -569,6 +575,7 @@ body {
 
 .client__logobox {
   padding: 20px 0 0 0;
+  /* Думаю, проще было бы сделать флексами, но я эксперементировал */
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 60px 1fr;
@@ -826,13 +833,138 @@ body {
 .footrow__links a {
   color: #fff;
 }
+/*======================
+			МЕДИАЗАПРОСЫ
+======================*/
+@media screen and (max-width: 576px) {
+  .story__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .story__image {
+    margin: 0 0 20px 0;
+  }
+  .story__link {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 768px) {
   .expertise__column {
     width: 50%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 576px) {
   .expertise__column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .teammates__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 -20px -20px 0;
+  }
+  .teammates__column {
+    margin: 0 20px 20px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .works__txtblock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .works__title {
+    margin: 0 0 20px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .news-client__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .form {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .form__enterform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form__submitmsg {
+    padding: 10px 100px;
+  }
+
+  .client {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  .client::after {
+    content: "";
+    display: block;
+    margin: 15px auto 0;
+    width: 50%;
+    height: 2px;
+    opacity: 0.3;
+    background-color: #413d4b;
+  }
+  .client__logobox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .client__item {
+    padding: 10px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .form__userdata {
+    width: 100%;
+  }
+  .form__usermessage {
     width: 100%;
   }
 }
