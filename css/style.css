@@ -833,6 +833,18 @@ body {
 /*======================
 			МЕДИАЗАПРОСЫ
 ======================*/
+@media screen and (max-width: 768px) {
+  .story__row {
+    display: block;
+  }
+  .story__image {
+    float: left;
+    margin: 0 30px 0 0;
+  }
+  .story__link {
+    text-align: center;
+  }
+}
 @media screen and (max-width: 576px) {
   .story__row {
     display: -webkit-box;
@@ -983,7 +995,7 @@ body {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    margin: 0 20px 0 0;
+    margin: 0 20px 10px 0;
   }
   .footbox__title {
     display: none;
@@ -991,7 +1003,7 @@ body {
   .footbox__title_adptv {
     text-align: center;
     display: inline-block;
-    margin: 20px 0 12px 0;
+    margin: 20px 0 22px 0;
     font-size: 15px;
     font-weight: 900;
     letter-spacing: 0.05em;
@@ -1014,6 +1026,10 @@ body {
     width: 45%;
     margin: 0 0 20px 0;
   }
+  .subfield {
+    width: 350px;
+  }
+
   .footrow {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1056,6 +1072,9 @@ body {
   .footbox__logo_adptv {
     margin: 0 0 10px 0;
   }
+  .footbox__title_adptv {
+    margin: 0 0 10px 0;
+  }
   .footbox__column {
     margin: 0 0 50px 0;
     display: -webkit-box;
@@ -1067,5 +1086,8 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
+  }
+  .subfield {
+    width: 200px;
   }
 }

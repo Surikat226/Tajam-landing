@@ -5,6 +5,22 @@
 
 
 // OUR STORY - TOP PART (MEDIA)
+@media screen and (max-width: 768px) {
+	.story {
+		&__row {
+			display: block;
+		}
+		&__image {
+			float: left;
+			margin: 0 30px 0 0;
+		}
+
+		&__link {
+			text-align: center;
+		}
+	}
+}
+
 @media screen and (max-width: 576px) {
 	.story {
 		&__row {
@@ -162,6 +178,7 @@
 @media screen and (max-width: 992px) {
 	.footer {
 	}
+
 	.footbox {
 		&__logo {
 			display: none;
@@ -169,7 +186,7 @@
 				text-align: center;
 				display: inline-block;
 				align-self: center;
-				margin: 0 20px 0 0;
+				margin: 0 20px 10px 0;
 			}
 		}
 		&__title {
@@ -177,7 +194,7 @@
 			&_adptv {
 				text-align: center;
 				display: inline-block;
-				margin: 20px 0 12px 0;
+				margin: 20px 0 22px 0;
 				font-size: 15px;
 				font-weight: 900;
 				letter-spacing: 0.05em;
@@ -198,6 +215,10 @@
 			&_wrap {
 			}
 		}
+	}
+
+	.subfield {
+		width: 350px;
 	}
 	
 	.footrow {
@@ -239,6 +260,7 @@
 		}
 		&__title {
 			&_adptv {
+				margin: 0 0 10px 0;
 			}
 		}
 		&__main {
@@ -255,5 +277,10 @@
 			}
 		}
 	}
+
+	.subfield {
+		width: 200px;
+	}
+
 }
 ///////////////////
