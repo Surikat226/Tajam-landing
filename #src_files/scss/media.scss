@@ -233,11 +233,35 @@
 }
 
 @media screen and (max-width: 576px) {
+	.footbox {
+		&__headers {
+		}
+		&__logo {
+			&_adptv {
+			}
+		}
+		&__title {
+			&_adptv {
+			}
+		}
+		&__main {
+		}
+		&__column {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			width: 100%;
+			&_wrap {
+			}
+		}
+
 	.footrow {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		&__links {
+			margin: 0 0 20px 0;
+		}
 			ul {
 				display: flex;
 				flex-direction: column;
@@ -247,6 +271,8 @@
 				&:before {
 					position: absolute;
 					top: 10px;
+					left: -15px;
+
 					content: '';
 					display: block;
 					width: 5px;
