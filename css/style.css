@@ -204,95 +204,6 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  .header__burger {
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-  }
-  .header__burger:after, .header__burger:before {
-    content: "";
-    background-color: #fff;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .header__burger:before {
-    top: 0;
-  }
-  .header__burger:after {
-    bottom: 0;
-  }
-  .header__burger span {
-    position: absolute;
-    background-color: #fff;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-    left: 0;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-
-  .header__links {
-    position: absolute;
-    top: -420%;
-    right: 0;
-    width: 100%;
-    padding: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .header__links a {
-    display: block;
-    text-align: center;
-    width: 200px;
-    margin: 0 0 10px 0;
-    padding: 10px;
-    border: 2px solid #fff;
-    letter-spacing: 3px;
-  }
-  .header__links a:hover {
-    background-color: #51206d;
-    color: #fff;
-  }
-  .header__links a:after {
-    content: "";
-    display: none;
-  }
-
-  .active {
-    top: 0;
-  }
-  .active:before {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 9px;
-  }
-  .active:after {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    bottom: 9px;
-  }
-  .active span {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
 .txt-link_white {
   color: #fff;
   margin: 0 20px 0 0;
@@ -925,6 +836,95 @@ body {
 /*======================
 			МЕДИАЗАПРОСЫ
 ======================*/
+@media screen and (max-width: 768px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+  }
+  .header__burger:after, .header__burger:before {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    left: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .header__links {
+    position: absolute;
+    top: -420%;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__links a {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border: 2px solid #fff;
+    letter-spacing: 3px;
+  }
+  .header__links a:hover {
+    background-color: #51206d;
+    color: #fff;
+  }
+  .header__links a:after {
+    content: "";
+    display: none;
+  }
+
+  .active {
+    top: 0;
+  }
+  .active:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 9px;
+  }
+  .active:after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
 @media screen and (max-width: 768px) {
   .story__row {
     display: block;
