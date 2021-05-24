@@ -181,6 +181,9 @@ body {
   left: 0;
   width: 100%;
 }
+.header {
+  z-index: 100;
+}
 .header__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,6 +205,7 @@ body {
 }
 .header__burger {
   display: none;
+  z-index: 100;
 }
 
 .txt-link_white {
@@ -233,6 +237,56 @@ body {
 .txt-link_white:hover:after {
   width: 100%;
   background-color: #fff;
+}
+
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+/* Конкретный слайдер */
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.slider .slick-dots button {
+  margin: 0 2px;
+  font-size: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #929292;
+}
+
+.slider .slick-active button {
+  background-color: #00E0D0;
+  border: none;
 }
 
 .welcome {
