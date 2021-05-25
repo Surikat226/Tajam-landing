@@ -10,5 +10,5 @@ $(document).ready(function () {
 	});
 
 
-	//$('.slick-dots').appendTo('.welcome__link')
+	$('.slick-dots').appendTo('.welcome__link');
 })

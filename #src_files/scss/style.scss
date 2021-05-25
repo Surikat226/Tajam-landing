@@ -110,7 +110,6 @@ body {
 	background-size: cover;
 	//border: 1px solid red;
 	min-height: 670px;
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -222,8 +221,6 @@ body {
 
 
 /* Конкретный слайдер */
-.slider{
-}
 .slider {
 		.slick-dots{
 		display: flex;
@@ -248,6 +245,35 @@ body {
 	}
 }
 .slider__item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/////////////
+.slick-dots{
+	position: absolute;
+	top: 125px;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	button {
+		margin: 0 2px;
+		font-size: 0;
+		width: 11px;
+		height: 11px;
+		border-radius: 50%;
+		background-color: transparent;
+		border: 1px solid rgb(146, 146, 146);
+	}
+}
+
+.slick-active {
+	button {
+		background-color: #00E0D0;
+		border:  none;
+	}
 }
 /////////////
 
@@ -276,6 +302,7 @@ body {
 		margin: 0 0 50px 0;
 	}
 	&__link {
+		position: relative;
 	}
 }
 
