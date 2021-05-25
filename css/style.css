@@ -157,6 +157,7 @@ body {
 		TOP-BLOCK 
 ==============*/
 .top-block {
+  position: relative;
   color: #fff;
   background-color: #2e264b;
   background: url("../img/backgrounds/header_bg.jpg") center no-repeat;
@@ -303,7 +304,7 @@ body {
 
 .slick-dots {
   position: absolute;
-  top: 125px;
+  bottom: 75px;
   left: 0;
   right: 0;
   display: -webkit-box;
