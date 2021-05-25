@@ -222,36 +222,9 @@ body {
 .slick-dots li button{}
 
 
-/* Конкретный слайдер */
-.slider {
-		.slick-dots{
-		display: flex;
-		justify-content: center;
-		button {
-			margin: 0 2px;
-			font-size: 0;
-			width: 11px;
-			height: 11px;
-			border-radius: 50%;
-			background-color: transparent;
-			border: 1px solid rgb(146, 146, 146);
-		}
-	}
-}
-.slider {
-	.slick-active {
-		button {
-			background-color: #00E0D0;
-			border:  none;
-		}
-	}
-}
-.slider__item{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-
+/* Стили применятся ко всем каруселям,
+поэтому стили для нижней карусели нужно
+поместить в конкретный блок */
 /////////////
 .slick-dots{
 	position: absolute;
@@ -276,6 +249,11 @@ body {
 		background-color: #00E0D0;
 		border:  none;
 	}
+}
+.slider__item{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 /////////////
 
@@ -606,23 +584,80 @@ body {
 =============*/
 
 .quotes {
+	padding: 70px 0;
+
 	color: #fff;
 	min-height: 500px;
 	background-color: #2e264b;
 	background: url('../img/backgrounds/quote_bg.jpg') center no-repeat;
 	background-size: cover;
-}
+	font-family: 'Playfair Display';
 
-.FUTURE-SLIDER {
-	min-height: 500px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 25px;
-	text-align: center;
-	p {
-		background-color: #247;
-		padding: 30px;
+	/* Верхняя карусель (цитаты) */
+	.quotes-slider {
+		text-align: center;
+		&__item {
+		}
+	
+		&__bigquote {
+			font-size: 100px;
+			line-height: 80px;
+		}
+	
+		&__text {
+			opacity: 0.85;
+			font-size: 16px;
+			line-height: 26px;
+			letter-spacing: 0.025em;
+	
+			margin: 0 0 50px 0;
+			}
+	
+		&__name {
+			font-family: Roboto;
+			line-height: 22px;
+			font-weight: 900;
+			letter-spacing: 0.05em;
+	
+			margin: 0 0 10px 0;
+		}
+	
+		&__prof {
+			opacity: 0.7;
+			font-size: 13px;
+	
+			margin: 0 0 45px 0;
+		}
+	}
+	
+	/* Нижняя карусель (аватарки) */
+	.quotes-photo-slider {
+		position: relative;
+
+		max-width: 370px;
+		margin: 0 auto;
+		&__item {
+			text-align: center;
+			img {
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;
+			}
+		}
+		/* Стрелка */
+		.slick-arrow{
+			position: absolute;
+			top: 35%;
+			font-size: 0;
+		}
+		/* Стрелка влево */
+		.slick-arrow.slick-prev{
+			left: 0;
+		}
+		/* Стрелка вправо */
+		.slick-arrow.slick-next{
+			right: 0;
+		}
 	}
 }
 

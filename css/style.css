@@ -265,43 +265,9 @@ body {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
-/* Конкретный слайдер */
-.slider .slick-dots {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.slider .slick-dots button {
-  margin: 0 2px;
-  font-size: 0;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 1px solid #929292;
-}
-
-.slider .slick-active button {
-  background-color: #00E0D0;
-  border: none;
-}
-
-.slider__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
+/* Стили применятся ко всем каруселям,
+поэтому стили для нижней карусели нужно
+поместить в конкретный блок */
 .slick-dots {
   position: absolute;
   bottom: 75px;
@@ -327,6 +293,19 @@ body {
 .slick-active button {
   background-color: #00E0D0;
   border: none;
+}
+
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .welcome {
@@ -601,30 +580,68 @@ body {
 		QUOTES
 =============*/
 .quotes {
+  padding: 70px 0;
   color: #fff;
   min-height: 500px;
   background-color: #2e264b;
   background: url("../img/backgrounds/quote_bg.jpg") center no-repeat;
   background-size: cover;
+  font-family: "Playfair Display";
+  /* Верхняя карусель (цитаты) */
+  /* Нижняя карусель (аватарки) */
 }
-
-.FUTURE-SLIDER {
-  min-height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 25px;
+.quotes .quotes-slider {
   text-align: center;
 }
-.FUTURE-SLIDER p {
-  background-color: #247;
-  padding: 30px;
+.quotes .quotes-slider__bigquote {
+  font-size: 100px;
+  line-height: 80px;
+}
+.quotes .quotes-slider__text {
+  opacity: 0.85;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.025em;
+  margin: 0 0 50px 0;
+}
+.quotes .quotes-slider__name {
+  font-family: Roboto;
+  line-height: 22px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  margin: 0 0 10px 0;
+}
+.quotes .quotes-slider__prof {
+  opacity: 0.7;
+  font-size: 13px;
+  margin: 0 0 45px 0;
+}
+.quotes .quotes-photo-slider {
+  position: relative;
+  max-width: 370px;
+  margin: 0 auto;
+  /* Стрелка */
+  /* Стрелка влево */
+  /* Стрелка вправо */
+}
+.quotes .quotes-photo-slider__item {
+  text-align: center;
+}
+.quotes .quotes-photo-slider__item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.quotes .quotes-photo-slider .slick-arrow {
+  position: absolute;
+  top: 35%;
+  font-size: 0;
+}
+.quotes .quotes-photo-slider .slick-arrow.slick-prev {
+  left: 0;
+}
+.quotes .quotes-photo-slider .slick-arrow.slick-next {
+  right: 0;
 }
 
 /*==================

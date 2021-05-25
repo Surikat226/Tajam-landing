@@ -11,4 +11,20 @@ $(document).ready(function () {
 
 
 	$('.slick-dots').appendTo('.top-block');
+
+
+	$('.quotes-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.quotes-photo-slider'
+	});
+	$('.quotes-photo-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.quotes-slider',
+		centerMode: true,
+		focusOnSelect: true,
+		centerPadding: 0
+	});
 })
