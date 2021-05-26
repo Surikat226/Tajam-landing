@@ -4,6 +4,14 @@ $(document).ready(function () {
 	})
 
 
+	$('.play__btn').click(function () {
+		$('.story-vid__video video').get(0).play();
+		$('.story-vid__video video').attr('controls', '');
+
+		$('.story-vid__play').toggleClass('inactive-btn');
+	})
+
+
 	$('.slider').slick({
 		arrows: false,
 		dots: true

@@ -118,7 +118,20 @@
 
 
 // OUR STORY - VIDEO (MEDIA)
+@media screen and (max-width: 768px) {
+	.play {
+		&__btn {
+			transform: scale(0.7);
+			margin: 0;
+			img {
+			}
+		}
 
+		&__sign {
+			transform: scale(0.7);
+		}
+	}
+}
 /////////////////////////////
 
 
