@@ -57,7 +57,7 @@ body {
 }
 
 /*///////////////////////////////////////////
-// Общие шаблоны для заголовков и текстов /*/
+// Общие классы для заголовков и текстов /*/
 .title {
 	font-family: 'Playfair Display';
 	font-size: 16px;
@@ -182,6 +182,13 @@ body {
 ///////////////
 
 // СЛАЙДЕР //
+.slider {
+	cursor: grab;
+}
+.quotes-slider {
+	cursor: grab;
+}
+
 .slick-slider{}
 /* Слайдер запущен */
 .slick-slider.slick-initialized{}
@@ -643,7 +650,7 @@ body {
 	.quotes-photo-slider {
 		position: relative;
 
-		max-width: 370px;
+		max-width: 400px;
 		margin: 0 auto;
 		&__item {
 			text-align: center;
@@ -656,16 +663,15 @@ body {
 		/* Стрелка */
 		.slick-arrow{
 			position: absolute;
-			top: 35%;
+			z-index: 10;
+			top: 20%;
 			font-size: 0;
 		}
 		/* Стрелка влево */
 		.slick-arrow.slick-prev{
-			left: 0;
 		}
 		/* Стрелка вправо */
 		.slick-arrow.slick-next{
-			right: 0;
 		}
 	}
 }
